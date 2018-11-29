@@ -1,5 +1,7 @@
 package ch13.work.template;
 
+import java.io.IOException;
+
 public abstract class BookReader {
     abstract void initialize();
     abstract void startReading();
@@ -8,6 +10,13 @@ public abstract class BookReader {
     public final void readBook() {
         initialize();
         startReading();
-        stopReading();
+
+        if (!isInteractive()) {
+            stopReading();
+        }
+    }
+
+    public boolean isInteractive() {
+        return false;
     }
 }

@@ -1,18 +1,42 @@
 package ch13.work.template;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 
 public class ReadfromFile extends BookReader{
+    BufferedReader file;
+
     @Override
     void initialize() {
-        System.out.println("Open an input file");
+        try {
+            file = new BufferedReader(new FileReader("out/production/chapter13/ch13/work/template/prideprejudice"));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
     void startReading() {
-        System.out.println("Loop writing out each record");
+        try {
+            while (file.readLine() != null) {
+                try {
+                    System.out.println(file.readLine());
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
     void stopReading() {
-        System.out.println("Close input file");
+        try {
+            file.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

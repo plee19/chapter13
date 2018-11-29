@@ -14,6 +14,6 @@ public class ReadfromArray extends BookReader{
 
     @Override
     void stopReading() {
-
+        System.out.println("Reading complete.");
     }
 }
