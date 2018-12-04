@@ -11,10 +11,12 @@ public class Broker {
     }
 
     public void placeOrders(){
-
+        double orderSum = 0;
         for (Order order : orderList) {
             order.execute();
+            orderSum += order.getValue();
         }
         orderList.clear();
+        System.out.println("Order total is: " + orderSum);
     }
 }

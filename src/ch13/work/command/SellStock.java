@@ -10,4 +10,6 @@ public class SellStock implements Order {
     public void execute() {
         abcStock.sell();
     }
+
+    public double getValue() { return 0; }
 }
