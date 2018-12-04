@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>ch13.work.facade</OriginalElement>
+  <nodes>
+    <node x="312.0" y="316.0">ch13.work.facade.Square</node>
+    <node x="246.00000000000003" y="101.0">ch13.work.facade.CircleAdapter</node>
+    <node x="0.0" y="243.0">ch13.work.facade.AdaptiveShapeMaker</node>
+    <node x="469.0" y="101.0">ch13.work.facade.SquareAdapter</node>
+    <node x="692.0" y="101.0">ch13.work.facade.LineAdapter</node>
+    <node x="0.0" y="101.0">ch13.work.facade.RectangleAdapter</node>
+    <node x="357.5" y="0.0">ch13.work.facade.Shape</node>
+    <node x="559.0" y="314.0">ch13.work.facade.Circle</node>
+    <node x="137.0" y="440.0">ch13.work.facade.ShapeMaker</node>
+    <node x="456.0" y="428.0">ch13.work.facade.Main</node>
+    <node x="550.0" y="243.0">ch13.work.facade.Rectangle</node>
+    <node x="302.0" y="243.0">ch13.work.facade.Line</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ch13.work.facade.SquareAdapter" target="ch13.work.facade.Shape">
+      <point x="0.0" y="-48.5" />
+      <point x="570.5" y="81.0" />
+      <point x="484.375" y="81.0" />
+      <point x="25.375" y="25.5" />
+    </edge>
+    <edge source="ch13.work.facade.RectangleAdapter" target="ch13.work.facade.Shape">
+      <point x="0.0" y="-48.5" />
+      <point x="113.0" y="71.0" />
+      <point x="382.875" y="71.0" />
+      <point x="-76.125" y="25.5" />
+    </edge>
+    <edge source="ch13.work.facade.CircleAdapter" target="ch13.work.facade.Shape">
+      <point x="0.0" y="-48.5" />
+      <point x="347.5" y="81.0" />
+      <point x="433.625" y="81.0" />
+      <point x="-25.375" y="25.5" />
+    </edge>
+    <edge source="ch13.work.facade.LineAdapter" target="ch13.work.facade.Shape">
+      <point x="0.0" y="-48.5" />
+      <point x="793.5" y="71.0" />
+      <point x="535.125" y="71.0" />
+      <point x="76.125" y="25.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="325.0" y="215.0" />
+  <SelectedNodes>
+    <node>ch13.work.facade.ShapeMaker</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

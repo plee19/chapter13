@@ -7,8 +7,8 @@ public class Rectangle {
 
     //@Override
     public void draw(int x, int y, int width, int height) {
-        System.out.println("Rectangle with coordinate left-down point (" + x + ";" + y + "), width: " + width
-                + ", height: " + height);
+        System.out.println("Rectangle with coordinate left-down point (" + x + ", " + y + "), width: " + width
+                + ", height: " + height + ".");
     }
 
 }

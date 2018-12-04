@@ -6,7 +6,7 @@ public class LineAdapter implements Shape {
         this.adaptee = line;
     }
     @Override
-    public void draw(int x1, int y1, int x2, int y2) {
-        adaptee.draw(x1, y1, x2, y2);
+    public void draw(int x1, int x2, int y1, int y2) {
+        adaptee.draw(x1, x2, y1, y2);
     }
 }
