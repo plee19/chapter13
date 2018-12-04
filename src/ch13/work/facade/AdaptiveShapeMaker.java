@@ -5,7 +5,4 @@ public class AdaptiveShapeMaker {
     public LineAdapter lineAdapter;
     public SquareAdapter squareAdapter;
     public CircleAdapter circleAdapter;
-
-    public AdaptiveShapeMaker() {
-    }
 }
